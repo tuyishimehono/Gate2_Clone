@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/output.css">
+    <link rel="icon" href="img/favicon.png">
     <title>UPorto clone</title>
 </head>
 <body>
@@ -33,11 +34,11 @@
     <div class="flex gap-6 justify-between bg-[#D5D5D5] px-28 py-8 w-full">
         <div class="flex gap-5 text-xl text-stone-700 font-bold items-center justify-between">
             <img class="w-80" src="img/logo.svg" alt="main logo">
-            <a href="#">STUDY</a>
-            <a href="#">RESEARCH</a>
-            <a href="#">INNOVATE</a>
-            <a href="#">LIVE</a>
-            <a href="#">EXPLORE</a>
+            <a class="hover:underline" href="#">STUDY</a>
+            <a class="hover:underline" href="#">RESEARCH</a>
+            <a class="hover:underline" href="#">INNOVATE</a>
+            <a class="hover:underline" href="#">LIVE</a>
+            <a class="hover:underline" href="#">EXPLORE</a>
         </div>
         <div class="flex gap-7 border-b-black border-b-2 underline-offset-auto items-center">
             <h3>Search</h3>
@@ -50,7 +51,7 @@
     <!-- Hero section -->
     <div class="bg-cover sm:bg-cover" style="background-image: url('img/slide-estudantes-internacionais-icbas.format-jpeg.jpg');">
         
-        <div class="container w-[450px] ml-28 pt-60 pb-10 shadow-lg">
+        <div class="container w-[350px] ml-28 pt-60 pb-10 shadow-lg">
             <div class="px-6 pb-8 bg-[#333333] bg-opacity-90">
                 <h2 class="text-white font-semibold text-2xl pt-4">Applications for International Students 2024/2025 are open!</h2>
                 <p class="text-gray-300 pt-4 pb-6">The more than 700 places available cover 53 degree and integrated masters courses at the U.Porto.</p>
@@ -72,7 +73,7 @@
        <div class="pt-20 pb-20">
             <h3 class="font-semibold text-3xl">Which courses are you looking for?</h3>
             <div class="flex w-full gap-9 pt-8">
-                <div class="flex flex-col gap-3 w-8/12">
+                <div class="flex flex-col gap-5 w-8/12">
                     <h3 class="border-2 border-black py-3 px-3 text-xl">All</h3>
                     <h3 class="border-2 border-black py-3 px-3 text-stone-600 text-xl">Please enter course keywords...</h3>
                     <button class="bg-[#a18a4d] px-20 py-3 text-white text-2xl font-bold hover:bg-white hover:border-[#a18a4d] hover:text-[#a18a4d] hover:border-2">Search</button>
@@ -91,23 +92,28 @@
     
     <!-- 4th section: News -->
     <div class="bg-[#F2F2F2] pt-20 pb-20 px-28">
-        <div class="flex justify-between text-[#a18a4d] items-baseline ">
+        <div class="flex justify-between text-[#a18a4d] items-baseline">
             <h2 class="text-6xl font-light">News</h2>
-            <h3 class="text-lg font-bold">All news</h3>
+            <div class="flex">
+                <h3 class="text-lg font-bold">All news</h3>
+                <img class="bg-[#a18a4d]" src="img/submenu-arrow.svg" alt="">
+            </div>
         </div>
 
-        <div class="flex flex-row gap-10 pt-10 overflow-x-clip">
-            <div class="grid grid-rows-2 bg-white">
-                <div>
-                    <p>Desporto</p>
-                    <a href="#">U.Porto vai organizar Europeu Universitário de Futebol em 2027</a>
-                    <time datetime="2024-05-13">14 May 2024</time>
+        <div class="flex justify-between gap-7 pt-10 overflow-x-hidden">
+            <div class="grid grid-rows-2 bg-white shadow-xl">
+                <div class="relative px-6 pt-4">
+                    <p class="text-[#a18a4d] pb-4">Desporto</p>
+                    <a class="text-2xl font-semibold text-[#333]" href="#">U.Porto vai organizar Europeu Universitário de Futebol em 2027</a>
+                    <time class="absolute left-6 bottom-2 text-stone-800" datetime="2024-05-14">14 May 2024</time>
                 </div>
-                <img class="bg-cover" src="img/aerea-frente-edificios.jpeg" alt="">
+                <div class="w-[390px] object-cover">
+                    <img src="img/aerea-frente-edificios.jpeg" alt="">
+                </div>   
             </div>
-            <div class="grid grid-rows-2 bg-white">
-                <div>
-                    <p>
+            <div class="grid grid-rows-2 bg-white shadow-xl">
+                <div class="relative px-6 pt-4">
+                    <p class="text-[#a18a4d] pb-4">
                         Campus e Comunidade
                         |
                         Ciência e Inovação
@@ -115,27 +121,27 @@
                         Multimédia
                         |
                         Vídeo</p>
-                    <a href="#">Mais de 1000 estudantes foram ao IJUP “abrir as portas” da Ciência</a>
-                    <time datetime="2024-05-13">13 May 2024</time>
+                    <a class="text-2xl font-semibold text-[#333] pb-12" href="#">Mais de 1000 estudantes foram ao IJUP “abrir as portas” da Ciência</a>
+                    <time class="absolute left-6 bottom-2 text-stone-800" datetime="2024-05-13">13 May 2024</time>
                 </div>
-                <img src="img/ijup-2024_31.jpeg" alt="">
-            </div>
-            <div class="grid grid-rows-2 bg-white">
-                <div>
-                    <p>Cultura</p>
-                    <a href="#">MHNC-UP abre “fora de horas” para celebrar os Museus e a Ciência</a>
-                    <time datetime="2024-05-13">11 May 2024</time>
+                <div class="w-[390px] bg-cover">
+                    <img src="img/aerea-frente-edificios.jpeg" alt="">
                 </div>
-                <img src="img/peddy-paper-mentoria-mhnc-up_02.jpeg" alt="">
             </div>
-            <div class="grid grid-rows-2 bg-white">
-                <div>
-                    <p>Cultura</p>
-                    <a href="#">MHNC-UP abre “fora de horas” para celebrar os Museus e a Ciência</a>
-                    <time datetime="2024-05-13">11 May 2024</time>
+            <div class="grid grid-rows-2 bg-white shadow-xl">
+                <div class="relative px-6 pt-4">
+                    <p class="text-[#a18a4d] pb-4">Cultura</p>
+                    <a class="text-2xl font-semibold text-[#333]" href="#">MHNC-UP abre “fora de horas” para celebrar os Museus e a Ciência</a>
+                    <time class="absolute left-6 bottom-2 text-stone-800" datetime="2024-05-11">11 May 2024</time>
                 </div>
-                <img src="img/peddy-paper-mentoria-mhnc-up_02.jpeg" alt="">
+                <div class="w-[390px]">
+                    <img src="img/aerea-frente-edificios.jpeg" alt="">
+                </div>
             </div>
+        </div>
+        <div class="flex pt-16 gap-2">
+            <img class="bg-[#a18a4d] px-4 py-4 scale-x-[-1]" src="img/submenu-arrow.svg" alt="">
+            <img class="bg-[#a18a4d] px-4 py-4" src="img/submenu-arrow.svg" alt="">
         </div>
     </div>
 </body>
