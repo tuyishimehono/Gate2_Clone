@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- top nav section -->
-    <div class="flex justify justify-between bg-[#333333] text-white px-28 py-2.5 items-center">
+    <div class="hidden lg:flex justify-between bg-[#333333] text-white px-28 py-2.5 items-center">
         <div class="flex gap-3 text-sm font-semibold">
             <div class="flex gap-1">
                 <a href="#">About the University</a>
@@ -37,8 +37,8 @@
     </div>
 
     <!-- Second nav section -->
-    <div class="flex gap-6 justify-between bg-[#D5D5D5] px-28 py-8 w-full sticky top-0 z-10">
-        <div class="flex gap-5 text-xl text-stone-700 font-bold items-center justify-between">
+    <div class="flex flex-shrink gap-6 justify-between bg-[#D5D5D5] px-14 md:px-28 py-8 w-full sticky top-0 z-10">
+        <div class="hidden md:flex flex-shrink gap-5 text-xl text-stone-700 font-bold items-center justify-between">
             <img class="w-80" src="img/logo.svg" alt="main logo">
             <a class="hover:underline" href="#">STUDY</a>
             <a class="hover:underline" href="#">RESEARCH</a>
@@ -46,9 +46,21 @@
             <a class="hover:underline" href="#">LIVE</a>
             <a class="hover:underline" href="#">EXPLORE</a>
         </div>
-        <div class="flex gap-7 border-b-black border-b-2 underline-offset-auto items-center">
+        <div class="flex gap-7 border-b-black border-b items-center">
             <h3>Search</h3>
             <img src="img/search-line.svg" alt="search icon">
+        </div>
+
+        <div class="md:hidden">
+            <div class="flex justify-between">
+                <div class="flex gap-3">
+                    <img src="img/largethreebars.svg" alt="">
+                    <img src="img/smlogo.svg" alt="small logo">
+                </div>
+                <div>
+                    <img src="img/smallthreebars.svg" alt="">
+                </div>
+            </div>
         </div>
 
 
@@ -78,7 +90,7 @@
             <h2 class="text-[#a18a4d] text-6xl font-light">Study</h2>
             <div class="flex justify-between pt-8">
                 <h3 class="font-semibold text-3xl w-[35%]">Your future is here!</h3>
-                <p class="font-extralight text-xl w-[65%]">Gathering the most complete offer of training programmes in Portugal, the 14 faculties of the U.Porto offer unique conditions to those who want to build an academic path of excellence and properly valued by the labour market.</p>
+                <p class="font-extralight text-xl text-stone-900 w-[65%]">Gathering the most complete offer of training programmes in Portugal, the 14 faculties of the U.Porto offer unique conditions to those who want to build an academic path of excellence and properly valued by the labour market.</p>
             </div>
         </div> 
         
@@ -269,46 +281,46 @@
 
     <!-- Footer Section -->
     <div class="pt-16 lg:pt-28 px-4 lg:px-28 bg-[#333333] text-white relative">
-        <div class="absolute -left-96 -top-16">
-            <img class="w-[600px] h-[600px]" src="img/img_minerva_footer.png" alt="">
+        <div class="absolute -left-96 -top-16 hidden lg:block">
+            <img class="w-[610px] h-[600px]" src="img/img_minerva_footer.png" alt="">
         </div>
-        <div class="flex flex-col md:flex-row">
-            <h4 class="text-[#a18a4d]">Media</h4>
-            <div class="flex flex-col">
-                <a class="font-extralight" href="#">U.Porto News</a>
-                <a class="font-extralight" href="#">U.Porto Agenda</a>
-                <a class="font-extralight" href="#">Media Contacts</a>
-                <a class="font-extralight" href="#">Image Manual</a>
-                <a class="font-extralight" href="#">Brochures and Presentations</a>
-            </div>
+        <div class="flex flex-col lg:grid lg:grid-cols-5 gap-3">
+            <h4 class="text-[#a18a4d] font-medium">Media</h4>
+            
+            <a class="font-extralight" href="#">U.Porto News</a>
+            <a class="font-extralight" href="#">U.Porto Agenda</a>
+            <a class="font-extralight" href="#">Media Contacts</a>
+            <a class="font-extralight" href="#">Image Manual</a>
+            <a class="font-extralight md:col-start-2" href="#">Brochures and Presentations</a>
+            
         </div>
-        <div class="pt-6 pb-14 flex flex-col gap-3 font-extralight text-sm">
-            <h4 class="text-[#a18a4d] font-medium text-medium">U.Porto Portals</h4>
+        <div class="pt-6 pb-14 flex flex-col gap-3 font-extralight text-sm lg:grid lg:grid-cols-5">
+            <h4 class="text-[#a18a4d] font-bold text-medium">U.Porto Portals</h4>
             <a href="#">CDUP - U.Porto Sportcs Centre</a>
             <a href="#">Social Support Services of the University of Porto (SASUP)</a>
             <a href="#">Former Students Portal</a>
             <a href="#">UPdigital Portal</a>
-            <a href="#">Educational Innovation</a>
+            <a class="col-start-2" href="#">Educational Innovation</a>
             <a href="#">U.Porto PRESS</a>
             <a href="#">U.Porto Innovation</a>
             <a href="#">Documentation and Information Services and Resources (SRDI)</a>
-            <a href="#">Peer Mentoring</a>
+            <a class="col-start-2" href="#">Peer Mentoring</a>
             <a href="#">AcademiaUP</a>
             <a href="#">Complaints Portal</a>
             <a href="#">SIGARRA U.Porto</a>
         </div>
         <div class="bg-stone-500 w-full h-[2px] "></div>
-        <div class="flex w-full gap-8 pt-10">
-            <a href="#"><img class="w-6" src="img/newspaper-line.svg" alt="news logo"></a>
-            <a href="#"><img class="w-6" src="img/instagram-line.svg" alt="instagram logo"></a>
-            <a href="#"><img class="w-6" src="img/youtube-fill.svg" alt="youtube logo"></a>
-            <a href="#"><img class="w-6" src="img/linkedin-fill.svg" alt="linkedin logo"></a>
-            <a href="#"><img class="w-6"src="img/twitter-x-line.svg" alt="twitter logo"></a>
-            <a href="#"><img class="w-6" src="img/facebook-fill.svg" alt="facebook logo"></a>
-        </div>
-
-        <div class="pt-8">
-            <div class="flex flex-col gap-2 font-extralight">
+        <div class="flex flex-col lg:grid lg:grid-cols-2 lg:justify-between pt-10">
+            <div class="flex w-full gap-8">
+                <a href="#"><img class="w-6" src="img/newspaper-line.svg" alt="news logo"></a>
+                <a href="#"><img class="w-6" src="img/instagram-line.svg" alt="instagram logo"></a>
+                <a href="#"><img class="w-6" src="img/youtube-fill.svg" alt="youtube logo"></a>
+                <a href="#"><img class="w-6" src="img/linkedin-fill.svg" alt="linkedin logo"></a>
+                <a href="#"><img class="w-6"src="img/twitter-x-line.svg" alt="twitter logo"></a>
+                <a href="#"><img class="w-6" src="img/facebook-fill.svg" alt="facebook logo"></a>
+            </div>
+            
+            <div class="flex flex-col gap-2 font-extralight lg:ml-40 pt-8 lg:pt-0">
                 <p class="font-medium">Contacts</p>
                 <p class="font-normal">Reitoria da Universidade do Porto</p>
                 <p>Praça Gomes Teixeira <br>4099-002 Porto, Portugal</p>
@@ -318,13 +330,15 @@
                 </div>
             </div>
 
-            <div class="flex flex-col md:flex-row md:gap-12 gap-1 font-extralight pt-10 pb-16">
-                <p class="font-medium">© University of Porto 2024</p>
-                <a class="hover:underline" href="#">Personal Data Protection</a>
-                <a class="hover:underline" href="#">Privacy Policy</a>
-                <a class="hover:underline" href="#">Accessibility</a>
-            </div>
         </div>
+
+        <div class="flex flex-col lg:flex-row lg:gap-12 gap-1 font-extralight pt-8 pb-16">
+            <p class="font-medium">© University of Porto 2024</p>
+            <a class="hover:underline" href="#">Personal Data Protection</a>
+            <a class="hover:underline" href="#">Privacy Policy</a>
+            <a class="hover:underline" href="#">Accessibility</a>
+        </div>
+        
     </div>
 </body>
 </html>

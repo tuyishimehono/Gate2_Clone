@@ -684,6 +684,10 @@ video {
   z-index: 10;
 }
 
+.col-start-2 {
+  grid-column-start: 2;
+}
+
 .ml-20 {
   margin-left: 5rem;
 }
@@ -930,6 +934,18 @@ video {
 
 .w-\[600px\] {
   width: 600px;
+}
+
+.w-\[610px\] {
+  width: 610px;
+}
+
+.flex-shrink {
+  flex-shrink: 1;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
 }
 
 .scale-x-\[-1\] {
@@ -1381,6 +1397,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1483,6 +1504,10 @@ video {
 
 .pt-14 {
   padding-top: 3.5rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -1629,6 +1654,11 @@ video {
   color: rgb(168 162 158 / var(--tw-text-opacity));
 }
 
+.text-stone-900 {
+  --tw-text-opacity: 1;
+  color: rgb(28 25 23 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -1753,12 +1783,44 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:top-0 {
+    top: 0px;
+  }
+
+  .md\:col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .md\:ml-40 {
+    margin-left: 10rem;
+  }
+
   .md\:block {
     display: block;
   }
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .md\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -1788,19 +1850,65 @@ video {
   .md\:gap-12 {
     gap: 3rem;
   }
+
+  .md\:gap-16 {
+    gap: 4rem;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .md\:px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:ml-40 {
+    margin-left: 10rem;
+  }
+
   .lg\:block {
     display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:grid {
+    display: grid;
   }
 
   .lg\:hidden {
     display: none;
   }
 
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:gap-12 {
+    gap: 3rem;
   }
 
   .lg\:px-28 {
@@ -1810,5 +1918,9 @@ video {
 
   .lg\:pt-28 {
     padding-top: 7rem;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0px;
   }
 }
