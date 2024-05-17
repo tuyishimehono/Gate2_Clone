@@ -835,6 +835,14 @@ video {
   background-size: cover;
 }
 
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .fill-current {
   fill: currentColor;
 }
@@ -1251,6 +1259,22 @@ video {
     width: 65%;
   }
 
+  .md\:w-\[\] {
+    width: ;
+  }
+
+  .md\:w-\[300px\] {
+    width: 300px;
+  }
+
+  .md\:w-\[420px\] {
+    width: 420px;
+  }
+
+  .md\:w-\[460px\] {
+    width: 460px;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1287,6 +1311,13 @@ video {
   .md\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .md\:md\:px-6 {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
   }
 
   .md\:pb-0 {
