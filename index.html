@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- top nav section -->
-    <div class="hidden lg:flex justify-between bg-[#333333] text-white px-28 py-2.5 items-center">
+    <div class="hidden md:flex justify-between bg-[#333333] text-white px-6 xl:px-28 py-2.5 items-center">
         <div class="flex gap-3 text-sm font-semibold">
             <div class="flex gap-1">
                 <a href="#">About the University</a>
@@ -37,8 +37,8 @@
     </div>
 
     <!-- Second nav section -->
-    <div class="flex flex-shrink gap-6 justify-between bg-[#D5D5D5] px-14 md:px-28 py-8 w-full sticky top-0 z-10">
-        <div class="hidden md:flex flex-shrink gap-5 text-xl text-stone-700 font-bold items-center justify-between">
+    <div class="hidden md:flex flex-shrink gap-6 justify-between bg-[#D5D5D5] px-6 xl:px-28 py-8 w-full sticky top-0 z-10">
+        <div class="flex flex-shrink gap-5 md:text-lg text-xl text-stone-700 font-bold items-center justify-between">
             <img class="w-80" src="img/logo.svg" alt="main logo">
             <a class="hover:underline" href="#">STUDY</a>
             <a class="hover:underline" href="#">RESEARCH</a>
@@ -51,19 +51,17 @@
             <img src="img/search-line.svg" alt="search icon">
         </div>
 
-        <div class="md:hidden">
-            <div class="flex justify-between">
-                <div class="flex gap-3">
-                    <img src="img/largethreebars.svg" alt="">
-                    <img src="img/smlogo.svg" alt="small logo">
-                </div>
-                <div>
-                    <img src="img/smallthreebars.svg" alt="">
-                </div>
-            </div>
+    </div>
+
+    <!-- sm navbar -->
+    <div class="md:hidden flex flex-wrap gap-6 justify-between bg-[#D5D5D5] px-6 py-8 w-full sticky top-0 z-10">
+        <div class="flex flex-wrap gap-5 text-xl text-stone-700 font-bold items-center justify-between">
+            <img class="w-10" src="img/largethreebars.svg" alt="">
+            <img class="w-44" src="img/smlogo.svg" alt="main logo">
         </div>
-
-
+        <div>
+            <img class="w-10" src="img/smallthreebars.svg" alt="">
+        </div>
     </div>
 
     <!-- Hero section -->
@@ -281,10 +279,10 @@
 
     <!-- Footer Section -->
     <div class="pt-16 lg:pt-28 px-4 lg:px-28 bg-[#333333] text-white relative">
-        <div class="absolute -left-96 -top-16 hidden lg:block">
+        <div class="absolute -left-96 -top-16 hidden md:block">
             <img class="w-[610px] h-[600px]" src="img/img_minerva_footer.png" alt="">
         </div>
-        <div class="flex flex-col lg:grid lg:grid-cols-5 gap-3">
+        <div class="flex flex-col md:grid md:grid-cols-5 gap-3">
             <h4 class="text-[#a18a4d] font-medium">Media</h4>
             
             <a class="font-extralight" href="#">U.Porto News</a>
@@ -294,7 +292,7 @@
             <a class="font-extralight md:col-start-2" href="#">Brochures and Presentations</a>
             
         </div>
-        <div class="pt-6 pb-14 flex flex-col gap-3 font-extralight text-sm lg:grid lg:grid-cols-5">
+        <div class="pt-6 md:pt-16 pb-14 flex flex-col gap-3 font-extralight text-sm md:grid md:grid-cols-5">
             <h4 class="text-[#a18a4d] font-bold text-medium">U.Porto Portals</h4>
             <a href="#">CDUP - U.Porto Sportcs Centre</a>
             <a href="#">Social Support Services of the University of Porto (SASUP)</a>
@@ -310,7 +308,7 @@
             <a href="#">SIGARRA U.Porto</a>
         </div>
         <div class="bg-stone-500 w-full h-[2px] "></div>
-        <div class="flex flex-col lg:grid lg:grid-cols-2 lg:justify-between pt-10">
+        <div class="flex flex-col md:grid md:grid-cols-2 md:justify-between pt-10">
             <div class="flex w-full gap-8">
                 <a href="#"><img class="w-6" src="img/newspaper-line.svg" alt="news logo"></a>
                 <a href="#"><img class="w-6" src="img/instagram-line.svg" alt="instagram logo"></a>
@@ -320,7 +318,7 @@
                 <a href="#"><img class="w-6" src="img/facebook-fill.svg" alt="facebook logo"></a>
             </div>
             
-            <div class="flex flex-col gap-2 font-extralight lg:ml-40 pt-8 lg:pt-0">
+            <div class="flex flex-col gap-2 font-extralight md:ml-40 pt-8 md:pt-0">
                 <p class="font-medium">Contacts</p>
                 <p class="font-normal">Reitoria da Universidade do Porto</p>
                 <p>Praça Gomes Teixeira <br>4099-002 Porto, Portugal</p>
@@ -332,7 +330,7 @@
 
         </div>
 
-        <div class="flex flex-col lg:flex-row lg:gap-12 gap-1 font-extralight pt-8 pb-16">
+        <div class="flex flex-col md:flex-row md:gap-12 gap-1 font-extralight pt-8 pb-16">
             <p class="font-medium">© University of Porto 2024</p>
             <a class="hover:underline" href="#">Personal Data Protection</a>
             <a class="hover:underline" href="#">Privacy Policy</a>
