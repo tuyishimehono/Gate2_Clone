@@ -37,7 +37,7 @@
     </div>
 
     <!-- Second nav section -->
-    <div class="hidden md:flex flex-shrink gap-6 justify-between bg-[#D5D5D5] px-6 xl:px-28 py-8 w-full md:sticky md:top-0 md:z-10">
+    <div class="hidden md:flex flex-shrink gap-6 justify-between bg-[#D5D5D5] px-6 xl:px-28 py-8 w-full fixed md:sticky md:top-0 md:z-10">
         <div class="flex flex-shrink gap-5 md:text-lg text-xl text-stone-700 font-bold items-center justify-between">
             <img class="w-80" src="img/logo.svg" alt="main logo">
             <a class="hover:underline" href="#">STUDY</a>
@@ -54,7 +54,7 @@
     </div>
 
     <!-- sm navbar -->
-    <div class="md:hidden flex flex-wrap gap-6 justify-between bg-[#D5D5D5] px-6 py-5 w-full sticky top-0 z-10">
+    <div class="md:hidden flex flex-wrap gap-6 justify-between bg-[#D5D5D5] px-6 py-5 w-full fixed top-0 z-10">
         <div class="flex flex-wrap gap-5 text-xl text-stone-700 font-bold items-center justify-between">
             <img class="w-8" src="img/largethreebars.svg" alt="">
             <img class="w-44" src="img/smlogo.svg" alt="main logo">
@@ -73,10 +73,10 @@
         <div class="absolute right-0 top-1/2">
             <img class="bg-[#a18a4d] px-4 py-4" src="img/submenu-arrow.svg" alt="">
         </div>
-        <div class="container lg:w-[350px] md:ml-28 pt-60 md:pb-10 shadow-lg">
+        <div class="lg:w-[350px] md:ml-28 pt-72 md:pb-10 shadow-lg">
             <div class="md:px-6 md:pb-8 bg-[#333333] bg-opacity-90">
                 <h2 class="text-white font-semibold text-2xl pt-4">Applications for International Students 2024/2025 are open!</h2>
-                <p class="text-gray-300 pt-4 pb-6">The more than 700 places available cover 53 degree and integrated masters courses at the U.Porto.</p>
+                <p class="text-gray-300 pt-4 pb-6 hidden md:block">The more than 700 places available cover 53 degree and integrated masters courses at the U.Porto.</p>
                 <button class="bg-[#A18A4D] font-bold px-2 text-stone-800">See More</button>
             </div>
         </div>
@@ -215,20 +215,20 @@
     </div>
 
     <!-- 7th section: figures -->
-    <div class="pt-28 px-28 relative bg-[#A18A4D]">
-        <div class="absolute right-28 flex gap-2">
+    <div class="pt-28 px-5 md:px-28 relative bg-[#A18A4D]">
+        <div class="absolute right-5 md:right-28 flex gap-2">
             <h5 class="text-sm font-medium text-white">Learn More</h5>
             <img class="bg-white py-0 rounded-full" src="img/arrow-drop-right-line.svg" alt="">
         </div> 
         <div class="w-full"> 
-            <div class="text-white text-center flex flex-col items-center pb-14 border-b-2 border-white">
+            <div class="text-white text-center flex flex-col items-center pb-14 border-b border-white">
                 <svg viewBox="0 0 512 512" height="4em" role="img" aria-hidden="true" class="fill-current text-white text-3xl items-center">
                     <path d="M386.37156,119.61552l0,0L377.03,100.32491l-.00063.0006L341.68059,27.32932a16.85833,16.85833,0,0,0-22.495-7.81585l-13.48231,6.52888a16.8578,16.8578,0,0,0-7.817,22.49459l2.28919,4.72723L259.74237,95.313l-50.25491,52.26228a6.372,6.372,0,0,0,9.18595,8.83334l50.192-52.19775L306.097,65.49212l82.69114,170.75762L416.52008,293.517,226.95558,311.955,174.08563,202.7771l23.92894-24.88355a6.372,6.372,0,0,0-9.1859-8.83337l-26.216,27.2635-83.54683,40.458a14.97156,14.97156,0,0,0-7.02331,19.79855L47.108,268.65487a16.65948,16.65948,0,0,0-7.72437,22.22985l34.92177,72.11444a16.65962,16.65962,0,0,0,22.2302,7.72508l24.93452-12.07467a14.97216,14.97216,0,0,0,19.88772,6.76682l4.7436-2.29711,48.34754,99.839a37.94762,37.94762,0,1,0,68.30751-33.07825l-48.34754-99.839,10.49647-5.083,197.53514-19.21315,1.92907,3.98358a16.85779,16.85779,0,0,0,22.495,7.81587l13.48231-6.52887a16.85833,16.85833,0,0,0,7.817-22.49457l-9.65871-19.94549a6.37152,6.37152,0,0,0-11.469,5.55394l9.6587,19.94549a4.10078,4.10078,0,0,1-1.90187,5.47158l-13.48231,6.52888a4.10075,4.10075,0,0,1-5.47192-1.90079l-89.6986-185.23011,0,0L309.35535,42.983a4.1008,4.1008,0,0,1,1.90187-5.47158l13.48231-6.52887a4.10079,4.10079,0,0,1,5.472,1.90076l36.67982,75.74485,1.15016,2.37511L434.07728,247.369a6.37155,6.37155,0,0,0,11.46909-5.554l-21.71265-44.83721a43.29593,43.29593,0,0,0,14.53933-54.54943l-.191-.39453A43.295,43.295,0,0,0,386.37156,119.61552ZM115.90691,347.185,90.98158,359.25517a3.90263,3.90263,0,0,1-5.20712-1.81L50.85269,285.33071a3.903,3.903,0,0,1,1.8092-5.20678l24.92533-12.07021ZM251.2885,435.4344a25.20452,25.20452,0,1,1-45.36933,21.97032L157.6816,357.7928l45.36933-21.97032ZM214.64379,315.76867,135.80386,353.9473a2.22,2.22,0,0,1-2.962-1.0292L83.59049,251.21268a2.21981,2.21981,0,0,1,1.02963-2.96124l78.83993-38.17863ZM418.19424,185.33214l-26.18393-54.07055a30.54171,30.54171,0,0,1,34.70219,16.32732l.19069.39378.00075-.00036A30.54256,30.54256,0,0,1,418.19424,185.33214Z" transform="translate(-37.72115 -17.83114)"></path>
                     </svg>
-                <h2 class="text-5xl font-semibold">U.PORTO IN FIGURES</h2>
+                <h2 class="text-4xl font-semibold pt-4">U.PORTO IN FIGURES</h2>
                 <p class="text-4xl font-light">2022/2023</p>
             </div> 
-            <div class="flex gap-6 px-28 pt-10 pb-16 justify-between text-white w-full">
+            <div class="flex flex-col gap-8 md:flex-row md:gap-6 px-28 pt-10 pb-16 justify-between text-white w-full">
                 <div class="text-center">
                     <h2 class="text-4xl font-bold">+300</h2>
                     <p class="text-3xl font-light">Courses</p>
@@ -247,31 +247,38 @@
     </div>
 
     <!-- 8th section: Frequently asked questions -->
-    <div class="pt-28 px-28 bg-[#F2F2F2]">
+    <div class="pt-28 px-5 md:px-28 bg-[#F2F2F2]">
         <div class="pb-16">
-            <h2 class="text-[#a18a4d] text-6xl font-light">Frequently asked questions</h2>
-            <div class="pt-10 flex gap-5 border-b border-stone-400">
+            <h2 class="text-[#a18a4d] text-4xl md:text-6xl font-light pb-6 md:pb-0">Frequently asked questions</h2>
+            <div class="hidden pt-10 md:flex flex-row gap-5 border-b border-stone-400">
                 <a class="font-medium text-lg border-b border-black py-4" href="#">International Students</a>
                 <a class="font-medium text-lg hover:border-b hover:border-black text-stone-500 hover:text-black py-4" href="#">Prospective Students</a>
                 <a class="font-medium text-lg hover:border-b hover:border-black text-stone-500 hover:text-black py-4" href="#">Professionals</a>
                 <a class="font-medium text-lg hover:border-b hover:border-black text-stone-500 hover:text-black py-4" href="#">Alumni</a>
                 <a class="font-medium text-lg hover:border-b hover:border-black text-stone-500 hover:text-black py-4" href="#">U.Porto Students</a>
             </div>
+            <div class="md:hidden flex justify-between border-2 border-black py-3 px-3 ">
+                <h3 class="text-xl">International Students</h3>
+                <img src="img/smalldownarrow.svg" alt="">
+            </div> 
             <div class="flex justify-between pt-8 gap-8">
-                <div class="w-1/2">
+                <div class="md:w-1/2">  
+                    <div class="md:hidden block pt-4">
+                        <img src="img/gate-estudantes-internacionais.format-jpeg.jpeg" alt="students">
+                    </div>
                     <h3 class="font-semibold text-3xl">International Students</h3>
                     <p class="font-extralight text-lg pt-6">Welcome! In this area you will find the answers you need to start and make the most of your experience at the University. We hope to help you... and welcome you soon!</p>
                     <div class="flex gap-3 pt-5">
                         <a class="text-base font-bold text-[#a18a4d]" href="#">See More</a>
                         <img class="bg-[#a18a4d] px-2 rounded-full" src="img/submenu-arrow.svg" alt="">
                     </div>
-                    <div class="flex pt-14 gap-2">
+                    <div class="hidden md:flex pt-14 gap-2">
                         <img class="bg-[#999999] px-4 py-3 scale-x-[-1]" src="img/submenu-arrow.svg" alt="">
                         <img class="bg-[#a18a4d] px-4 py-3" src="img/submenu-arrow.svg" alt="">
                     </div>
 
                 </div>
-                <div class="w-1/2">
+                <div class="hidden md:block md:w-1/2">
                     <img src="img/gate-estudantes-internacionais.format-jpeg.jpeg" alt="students">
                 </div>
             </div>
@@ -279,7 +286,7 @@
     </div>
 
     <!-- Footer Section -->
-    <div class="pt-16 lg:pt-28 px-4 lg:px-28 bg-[#333333] text-white relative">
+    <div class="pt-16 md:pt-28 px-4 md:px-28 bg-[#333333] text-white relative">
         <div class="absolute -left-96 -top-16 hidden md:block">
             <img class="w-[610px] h-[600px]" src="img/img_minerva_footer.png" alt="">
         </div>
