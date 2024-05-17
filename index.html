@@ -11,8 +11,14 @@
     <!-- top nav section -->
     <div class="flex justify justify-between bg-[#333333] text-white px-28 py-2.5 items-center">
         <div class="flex gap-3 text-sm font-semibold">
-            <a href="#">About the University </a>
-            <a href="#">Faculties</a>
+            <div class="flex gap-1">
+                <a href="#">About the University</a>
+                <img src="img/arrow-down-s-fill.svg" alt="smallarrow">
+            </div>
+            <div class="flex gap-1">
+                <a href="#">Faculties</a>
+                <img src="img/arrow-down-s-fill.svg" alt="smallarrow">
+            </div>
         </div>
         <div class="flex gap-6 items-center">
             <div class="flex gap-3">
@@ -49,8 +55,14 @@
     </div>
 
     <!-- Hero section -->
-    <div class="bg-cover sm:bg-cover" style="background-image: url('img/slide-estudantes-internacionais-icbas.format-jpeg.jpg');">
-        
+    <div class="bg-cover relative" style="background-image: url('img/slide-estudantes-internacionais-icbas.format-jpeg.jpg');">
+        <div class="absolute left-0 top-1/2">
+            <img class="bg-[#a18a4d] px-4 py-4 scale-x-[-1]" src="img/submenu-arrow.svg" alt="">
+            
+        </div>
+        <div class="absolute right-0 top-1/2">
+            <img class="bg-[#a18a4d] px-4 py-4" src="img/submenu-arrow.svg" alt="">
+        </div>
         <div class="container w-[350px] ml-28 pt-60 pb-10 shadow-lg">
             <div class="px-6 pb-8 bg-[#333333] bg-opacity-90">
                 <h2 class="text-white font-semibold text-2xl pt-4">Applications for International Students 2024/2025 are open!</h2>
@@ -94,13 +106,13 @@
     <div class="bg-[#F2F2F2] pt-20 pb-20 px-28">
         <div class="flex justify-between text-[#a18a4d] items-baseline">
             <h2 class="text-6xl font-light">News</h2>
-            <div class="flex">
+            <div class="flex gap-3">
                 <h3 class="text-lg font-bold">All news</h3>
-                <img class="bg-[#a18a4d]" src="img/submenu-arrow.svg" alt="">
+                <img class="bg-[#a18a4d] px-3 rounded-2xl" src="img/submenu-arrow.svg" alt="">
             </div>
         </div>
 
-        <div class="flex justify-between gap-7 pt-10 overflow-x-hidden">
+        <div class="flex justify-between gap-7 pt-12 overflow-x-hidden">
             <div class="grid grid-rows-2 bg-white shadow-xl">
                 <div class="relative px-6 pt-4">
                     <p class="text-[#a18a4d] pb-4">Desporto</p>
@@ -125,7 +137,7 @@
                     <time class="absolute left-6 bottom-2 text-stone-800" datetime="2024-05-13">13 May 2024</time>
                 </div>
                 <div class="w-[390px] bg-cover">
-                    <img src="img/aerea-frente-edificios.jpeg" alt="">
+                    <img src="img/ijup-2024_31.jpeg" alt="">
                 </div>
             </div>
             <div class="grid grid-rows-2 bg-white shadow-xl">
@@ -135,14 +147,46 @@
                     <time class="absolute left-6 bottom-2 text-stone-800" datetime="2024-05-11">11 May 2024</time>
                 </div>
                 <div class="w-[390px]">
-                    <img src="img/aerea-frente-edificios.jpeg" alt="">
+                    <img src="img/peddy-paper-mentoria-mhnc-up_02.jpeg" alt="">
                 </div>
             </div>
         </div>
         <div class="flex pt-16 gap-2">
-            <img class="bg-[#a18a4d] px-4 py-4 scale-x-[-1]" src="img/submenu-arrow.svg" alt="">
+            <img class="bg-[#999999] px-4 py-4 scale-x-[-1]" src="img/submenu-arrow.svg" alt="">
             <img class="bg-[#a18a4d] px-4 py-4" src="img/submenu-arrow.svg" alt="">
         </div>
+    </div>
+
+    <!--5th section: University excellence section -->
+    <div class="pt-20 px-28">
+        <div class="flex justify-between pt-8 gap-7">
+            <div class="w-[40%] bg-contain bg-no-repeat bg-right" style="background-image: url('img/minerva_01.png');">
+                <h3 class="text-[#a18a4d] text-6xl font-light">We are a University of Excellence!</h3>
+            </div>
+            <div class="font-extralight text-lg w-[60%] pt-6">
+                <p class="">With over 100 years of history, the University of Porto is a <span class="font-normal">leading teaching and scientific research institution in Portugal and worldwide.</span></p>
+                <p class="pt-5">Considered <span class="font-normal">the best Portuguese University and one of the best 100 European institutions</span>according to the most important Higher Education rankings, U.Porto combines quality teaching and excellent research with the best academic experience.</p>
+
+                <h4 class="pt-6 font-normal">We are Waiting for you!</h4>
+                <div class="flex gap-3 pt-5">
+                    <h3 class="text-base font-bold text-[#a18a4d]">See More</h3>
+                    <img class="bg-[#a18a4d] px-3 rounded-2xl" src="img/submenu-arrow.svg" alt="">
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <!-- 6th Section : Research -->
+    <div>
+        <div class="pb-16">
+            <h2 class="text-[#a18a4d] text-6xl font-light">Study</h2>
+            <div class="flex justify-between pt-8">
+                <h3 class="font-semibold text-3xl w-[65%]">Your future is here!</h3>
+                <div class="w-[35%]">
+                    <img src="img/investigar-home_destaque.format-jpeg.jpg" alt="">
+                </div>
+            </div>
+        </div> 
     </div>
 </body>
 </html>
