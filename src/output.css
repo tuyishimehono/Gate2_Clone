@@ -554,14 +554,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.items-center {
-  align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
 .border {
   border-width: 1px;
 }
