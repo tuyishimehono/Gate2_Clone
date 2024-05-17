@@ -37,7 +37,7 @@
     </div>
 
     <!-- Second nav section -->
-    <div class="flex gap-6 justify-between bg-[#D5D5D5] px-28 py-8 w-full">
+    <div class="flex gap-6 justify-between bg-[#D5D5D5] px-28 py-8 w-full sticky">
         <div class="flex gap-5 text-xl text-stone-700 font-bold items-center justify-between">
             <img class="w-80" src="img/logo.svg" alt="main logo">
             <a class="hover:underline" href="#">STUDY</a>
@@ -268,14 +268,16 @@
     </div>
 
     <!-- Footer Section -->
-    <div class=" pt-16 lg:pt-28 px-4 lg:px-28 bg-[#333333] text-white">
-        <div class="flex flex-col">
+    <div class="pt-16 lg:pt-28 px-4 lg:px-28 bg-[#333333] text-white">
+        <div class="flex flex-col md:flex-row">
             <h4 class="text-[#a18a4d]">Media</h4>
-            <a class="font-extralight" href="#">U.Porto News</a>
-            <a class="font-extralight" href="#">U.Porto Agenda</a>
-            <a class="font-extralight" href="#">Media Contacts</a>
-            <a class="font-extralight" href="#">Image Manual</a>
-            <a class="font-extralight" href="#">Brochures and Presentations</a>
+            <div class="flex flex-col">
+                <a class="font-extralight" href="#">U.Porto News</a>
+                <a class="font-extralight" href="#">U.Porto Agenda</a>
+                <a class="font-extralight" href="#">Media Contacts</a>
+                <a class="font-extralight" href="#">Image Manual</a>
+                <a class="font-extralight" href="#">Brochures and Presentations</a>
+            </div>
         </div>
         <div class="pt-6 pb-14 flex flex-col gap-3 font-extralight text-sm">
             <h4 class="text-[#a18a4d] font-medium text-medium">U.Porto Portals</h4>
@@ -303,7 +305,22 @@
         </div>
 
         <div class="pt-8">
-            
+            <div class="flex flex-col gap-2 font-extralight">
+                <p class="font-medium">Contacts</p>
+                <p class="font-normal">Reitoria da Universidade do Porto</p>
+                <p>Praça Gomes Teixeira <br>4099-002 Porto, Portugal</p>
+                <div class="flex flex-col">
+                    <p class="font-medium">Tel.: <a class="font-extralight hover:underline" href="#">(+351) 220 408 000</a></p>
+                    <p class="font-medium">E-mail: <a class="font-extralight hover:underline" href="#">up@up.pt</a></p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-1 font-extralight pt-10 pb-16">
+                <p class="font-medium">© University of Porto 2024</p>
+                <a class="hover:underline" href="#">Personal Data Protection</a>
+                <a class="hover:underline" href="#">Privacy Policy</a>
+                <a class="hover:underline" href="#">Accessibility</a>
+            </div>
         </div>
     </div>
 </body>
